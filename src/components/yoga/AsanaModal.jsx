@@ -12,7 +12,6 @@ const levelColors = {
 
 function AsanaItem({ asana, index }) {
   const [expanded, setExpanded] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
 
   const voiceText = `${asana.name}, also known as ${asana.english}. ${asana.description}. Benefits: ${asana.benefits}. Precautions: ${asana.precautions}`;
 
@@ -87,26 +86,29 @@ function AsanaItem({ asana, index }) {
               <div className="pt-2 border-t border-border/40">
                 {asana.youtube === null ? (
                   <p className="text-xs text-muted-foreground italic">📹 No video available for this pose</p>
-                ) : !showVideo ? (
-                  <button
-                    onClick={() => setShowVideo(true)}
-                    className="flex items-center gap-2 text-xs font-medium text-primary hover:underline"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    Watch demonstration video
-                  </button>
-                ) : (
-                  <div className="rounded-xl overflow-hidden aspect-video">
-                    <iframe
-                      src={`${asana.youtube}?rel=0&modestbranding=1`}
-                      title={`${asana.name} demonstration`}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-full"
-                      loading="lazy"
-                    />
-                  </div>
-                )}
+                ) : (() => {
+                  const videoId = asana.youtube.replace('https://www.youtube.com/embed/', '');
+                  const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                  return (
+                    <a
+                      href={watchUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-xl bg-red-50 border border-red-100 hover:bg-red-100 transition-colors group"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-red-600 flex items-center justify-center shrink-0">
+                        <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold text-red-700">Watch on YouTube</p>
+                        <p className="text-[10px] text-red-500">{asana.name} demonstration</p>
+                      </div>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 ml-auto group-hover:translate-x-0.5 transition-transform" />
+                    </a>
+                  );
+                })()}
               </div>
             </div>
           </motion.div>
