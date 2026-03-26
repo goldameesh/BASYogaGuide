@@ -84,30 +84,30 @@ function AsanaItem({ asana, index }) {
               </div>
 
               {/* YouTube Video */}
-              {asana.youtube && (
-                <div className="pt-2 border-t border-border/40">
-                  {!showVideo ? (
-                    <button
-                      onClick={() => setShowVideo(true)}
-                      className="flex items-center gap-2 text-xs font-medium text-primary hover:underline"
-                    >
-                      <ExternalLink className="w-3.5 h-3.5" />
-                      Watch demonstration video
-                    </button>
-                  ) : (
-                    <div className="rounded-xl overflow-hidden aspect-video">
-                      <iframe
-                        src={`${asana.youtube}?rel=0&modestbranding=1`}
-                        title={`${asana.name} demonstration`}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="w-full h-full"
-                        loading="lazy"
-                      />
-                    </div>
-                  )}
-                </div>
-              )}
+              <div className="pt-2 border-t border-border/40">
+                {asana.youtube === null ? (
+                  <p className="text-xs text-muted-foreground italic">📹 No video available for this pose</p>
+                ) : !showVideo ? (
+                  <button
+                    onClick={() => setShowVideo(true)}
+                    className="flex items-center gap-2 text-xs font-medium text-primary hover:underline"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    Watch demonstration video
+                  </button>
+                ) : (
+                  <div className="rounded-xl overflow-hidden aspect-video">
+                    <iframe
+                      src={`${asana.youtube}?rel=0&modestbranding=1`}
+                      title={`${asana.name} demonstration`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+              </div>
             </div>
           </motion.div>
         )}

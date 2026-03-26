@@ -15,7 +15,7 @@ export const BODY_REGIONS = [
         benefits: "Improves concentration, strengthens core, calms nervous system",
         precautions: "Avoid with neck injuries, high blood pressure, or during menstruation",
         source: "B.K.S. Iyengar – Light on Yoga (HarperCollins, 1966); Iyengar Yoga Institute, Pune",
-        youtube: "https://www.youtube.com/embed/tcZNLFmFFUo"
+        youtube: "https://www.youtube.com/embed/qxXxqAK8aZI"
       },
       {
         name: "Sarvangasana",
@@ -25,17 +25,17 @@ export const BODY_REGIONS = [
         benefits: "Stimulates thyroid, relieves stress, improves digestion",
         precautions: "Avoid with neck or shoulder injuries",
         source: "Swami Sivananda – The Science of Yoga; Sivananda Yoga Vedanta Centres",
-        youtube: "https://www.youtube.com/embed/l4HxHxjhFo0"
+        youtube: "https://www.youtube.com/embed/g3wvIPXZ-Qo"
       },
       {
-        name: "Brahmari Pranayama",
+        name: "Bhramari Pranayama",
         english: "Bee Breath",
         level: "Beginner",
         description: "A calming breathing technique that creates a humming sound, relieving tension in the head and mind.",
         benefits: "Relieves headache, reduces anxiety, improves concentration",
         precautions: "Practice on an empty stomach",
         source: "Patanjali – Yoga Sutras; Art of Living Foundation",
-        youtube: "https://www.youtube.com/embed/V0IlT5JFbW4"
+        youtube: "https://www.youtube.com/embed/jHAa1B0XctU"
       }
     ]
   },
@@ -55,7 +55,7 @@ export const BODY_REGIONS = [
         benefits: "Stimulates ear health, calms the brain, stretches spine",
         precautions: "Avoid with neck injuries or ear infections",
         source: "B.K.S. Iyengar – Light on Yoga; Yoga Journal (yogajournal.com)",
-        youtube: "https://www.youtube.com/embed/8X9KQJ-Bv5o"
+        youtube: "https://www.youtube.com/embed/hdO-aQuNnHc"
       },
       {
         name: "Shanmukhi Mudra",
@@ -65,7 +65,7 @@ export const BODY_REGIONS = [
         benefits: "Promotes inner awareness, reduces tinnitus, calms mind",
         precautions: "Keep pressure gentle on the ears",
         source: "Swami Satyananda Saraswati – Asana Pranayama Mudra Bandha; Bihar School of Yoga",
-        youtube: "https://www.youtube.com/embed/5G9RBCjKuqo"
+        youtube: "https://www.youtube.com/embed/cGo6bbiB-q0"
       },
       {
         name: "Simhasana",
@@ -75,7 +75,7 @@ export const BODY_REGIONS = [
         benefits: "Relieves tension in face, improves hearing, boosts confidence",
         precautions: "Avoid straining the jaw",
         source: "Yoga Journal – Pose Library; American Yoga Association",
-        youtube: "https://www.youtube.com/embed/wtiwHbqosJw"
+        youtube: "https://www.youtube.com/embed/xdUyHPa66A4"
       }
     ]
   },
@@ -95,7 +95,7 @@ export const BODY_REGIONS = [
         benefits: "Relieves neck stiffness, improves mobility, reduces headaches",
         precautions: "Move slowly, avoid sudden jerks",
         source: "Swami Satyananda Saraswati – Asana Pranayama Mudra Bandha; Bihar School of Yoga",
-        youtube: "https://www.youtube.com/embed/9L2b2khySLE"
+        youtube: "https://www.youtube.com/embed/SKa9yZyKJKc"
       },
       {
         name: "Matsyasana",
@@ -105,7 +105,7 @@ export const BODY_REGIONS = [
         benefits: "Stretches neck muscles, opens chest, stimulates throat chakra",
         precautions: "Use support under head if neck is sensitive",
         source: "B.K.S. Iyengar – Light on Yoga; Iyengar Yoga Institute, Pune",
-        youtube: "https://www.youtube.com/embed/WZk0u-lEDuU"
+        youtube: "https://www.youtube.com/embed/vhFdcezAyL8"
       },
       {
         name: "Setu Bandhasana",
@@ -115,7 +115,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens neck, calms brain, reduces anxiety",
         precautions: "Keep chin slightly tucked to protect cervical spine",
         source: "Yoga Journal – Pose Library; American College of Sports Medicine",
-        youtube: "https://www.youtube.com/embed/jalL1yDl4gw"
+        youtube: "https://www.youtube.com/embed/NnbvPeAIhmA"
       }
     ]
   },
@@ -135,7 +135,7 @@ export const BODY_REGIONS = [
         benefits: "Opens shoulder joints, improves balance, strengthens legs",
         precautions: "Modify arm position if shoulder mobility is limited",
         source: "B.K.S. Iyengar – Light on Yoga; Yoga Journal (yogajournal.com/poses)",
-        youtube: "https://www.youtube.com/embed/EpVSI97QPSY"
+        youtube: "https://www.youtube.com/embed/DSfmZHa14uI"
       },
       {
         name: "Gomukhasana",
@@ -145,7 +145,7 @@ export const BODY_REGIONS = [
         benefits: "Deep shoulder stretch, opens chest, corrects posture",
         precautions: "Use a strap if hands don't meet behind back",
         source: "Yoga Journal – Pose Library; Iyengar Yoga Institute",
-        youtube: "https://www.youtube.com/embed/V3_RA9fQEHE"
+        youtube: "https://www.youtube.com/embed/ywH_9dKw1pk"
       },
       {
         name: "Paschim Namaskarasana",
@@ -155,7 +155,7 @@ export const BODY_REGIONS = [
         benefits: "Opens shoulders and chest, improves wrist flexibility",
         precautions: "Build up gradually; don't force the hands together",
         source: "Bihar School of Yoga – Asana Pranayama Mudra Bandha",
-        youtube: "https://www.youtube.com/embed/7kgZnJqzNDU"
+        youtube: "https://www.youtube.com/embed/8OuteVwPQZU"
       }
     ]
   },
@@ -175,7 +175,7 @@ export const BODY_REGIONS = [
         benefits: "Opens chest, strengthens spine, improves breathing",
         precautions: "Don't overextend the lower back",
         source: "Yoga Journal – Pose Library; National Institutes of Health (PubMed: yoga chest openers)",
-        youtube: "https://www.youtube.com/embed/JDcdhTuycOI"
+        youtube: "https://www.youtube.com/embed/n6jrC6WeF84"
       },
       {
         name: "Ustrasana",
@@ -185,7 +185,7 @@ export const BODY_REGIONS = [
         benefits: "Expands chest, stimulates heart chakra, improves posture",
         precautions: "Support lower back, avoid if you have back injuries",
         source: "B.K.S. Iyengar – Light on Yoga; Yoga Journal (yogajournal.com)",
-        youtube: "https://www.youtube.com/embed/fHB3Fjkpqxs"
+        youtube: "https://www.youtube.com/embed/AigVwIFvmAQ"
       },
       {
         name: "Dhanurasana",
@@ -195,7 +195,7 @@ export const BODY_REGIONS = [
         benefits: "Opens chest and shoulders, strengthens back, improves posture",
         precautions: "Avoid with herniated discs or pregnancy",
         source: "Swami Sivananda – The Science of Yoga; Sivananda Yoga Vedanta Centres",
-        youtube: "https://www.youtube.com/embed/tSBi7e-XOOA"
+        youtube: "https://www.youtube.com/embed/NYwYxNjco8o"
       }
     ]
   },
@@ -215,7 +215,7 @@ export const BODY_REGIONS = [
         benefits: "Relieves upper back tension, improves spinal flexibility",
         precautions: "Move gently with spinal conditions",
         source: "Yoga Journal – Pose Library; American Yoga Association",
-        youtube: "https://www.youtube.com/embed/kqnua4rHVVA"
+        youtube: "https://www.youtube.com/embed/y39PrKY_4JM"
       },
       {
         name: "Balasana",
@@ -225,7 +225,7 @@ export const BODY_REGIONS = [
         benefits: "Stretches back, calms mind, relieves fatigue",
         precautions: "Use a pillow under forehead for comfort",
         source: "Yoga Journal – Restorative Poses; Sivananda Yoga Vedanta Centres",
-        youtube: "https://www.youtube.com/embed/2MJGg-dUKh0"
+        youtube: "https://www.youtube.com/embed/eqVMAPM00DM"
       },
       {
         name: "Sasangasana",
@@ -235,7 +235,7 @@ export const BODY_REGIONS = [
         benefits: "Stretches upper back deeply, stimulates immune system",
         precautions: "Keep weight on knees, not on head",
         source: "Bikram Choudhury – Bikram Yoga; Yoga Journal (yogajournal.com)",
-        youtube: "https://www.youtube.com/embed/Ev5AROkY_lM"
+        youtube: null
       }
     ]
   },
@@ -255,7 +255,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens arms and shoulders, lengthens spine",
         precautions: "Bend knees if hamstrings are tight",
         source: "Yoga Journal – Pose Library; National Center for Complementary and Integrative Health (NCCIH)",
-        youtube: "https://www.youtube.com/embed/EC7RGJ975iM"
+        youtube: "https://www.youtube.com/embed/j97SSGsnCAQ"
       },
       {
         name: "Chaturanga Dandasana",
@@ -265,7 +265,7 @@ export const BODY_REGIONS = [
         benefits: "Builds arm strength, tones core, improves endurance",
         precautions: "Keep elbows close to body, modify on knees if needed",
         source: "Iyengar Yoga Institute – Teacher Training Materials; Yoga Journal",
-        youtube: "https://www.youtube.com/embed/pqbYurntRHU"
+        youtube: "https://www.youtube.com/embed/KL64bj_iLHo"
       },
       {
         name: "Vasisthasana",
@@ -275,7 +275,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens arms and wrists, improves balance",
         precautions: "Stack or stagger feet for balance; avoid with wrist injuries",
         source: "Yoga Journal – Pose Library; American College of Sports Medicine",
-        youtube: "https://www.youtube.com/embed/WFL8xDmcHqI"
+        youtube: "https://www.youtube.com/embed/dFCrqn0RzJA"
       }
     ]
   },
@@ -295,7 +295,7 @@ export const BODY_REGIONS = [
         benefits: "Calms mind, promotes hand flexibility, centers energy",
         precautions: "Keep wrists relaxed and aligned",
         source: "Bihar School of Yoga – Asana Pranayama Mudra Bandha; Art of Living Foundation",
-        youtube: "https://www.youtube.com/embed/G_q7NcBLmNI"
+        youtube: "https://www.youtube.com/embed/5a07Rmi0RDM"
       },
       {
         name: "Gyan Mudra",
@@ -305,7 +305,7 @@ export const BODY_REGIONS = [
         benefits: "Improves concentration, reduces anxiety, stimulates brain",
         precautions: "Keep hands relaxed during practice",
         source: "Swami Satyananda Saraswati – Mudra Vigyan; Bihar School of Yoga",
-        youtube: "https://www.youtube.com/embed/j4_L5bOqfSM"
+        youtube: "https://www.youtube.com/embed/axcuvKMfxw8"
       },
       {
         name: "Tolasana",
@@ -315,7 +315,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens hands and wrists, builds core strength",
         precautions: "Requires strong wrists and core; use blocks for support",
         source: "B.K.S. Iyengar – Light on Yoga; Iyengar Yoga Institute, Pune",
-        youtube: "https://www.youtube.com/embed/yY3aTNGJCZk"
+        youtube: null
       }
     ]
   },
@@ -335,7 +335,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens core, improves digestion, tones abs",
         precautions: "Bend knees for modification; avoid with lower back pain",
         source: "Yoga Journal – Pose Library; National Institutes of Health (Yoga for Core Strength)",
-        youtube: "https://www.youtube.com/embed/sxOCERb9uoI"
+        youtube: "https://www.youtube.com/embed/gWEey6tp7-c"
       },
       {
         name: "Ardha Matsyendrasana",
@@ -345,7 +345,7 @@ export const BODY_REGIONS = [
         benefits: "Stimulates digestive organs, detoxifies, increases spinal mobility",
         precautions: "Twist from the waist, not the neck",
         source: "B.K.S. Iyengar – Light on Yoga; Yoga Journal (yogajournal.com)",
-        youtube: "https://www.youtube.com/embed/cUqoNDBFpX0"
+        youtube: "https://www.youtube.com/embed/i21iPtaferg"
       },
       {
         name: "Pawanmuktasana",
@@ -355,7 +355,7 @@ export const BODY_REGIONS = [
         benefits: "Relieves gas, improves digestion, strengthens core",
         precautions: "Avoid during pregnancy; gentle pressure only",
         source: "Swami Satyananda Saraswati – Asana Pranayama Mudra Bandha; Bihar School of Yoga",
-        youtube: "https://www.youtube.com/embed/kQ8FtV5WLPs"
+        youtube: "https://www.youtube.com/embed/f6csw60f0Dg"
       }
     ]
   },
@@ -375,7 +375,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens lower back, opens chest, relieves sciatica",
         precautions: "Don't push too high; keep hips grounded",
         source: "National Institutes of Health – Yoga for Low-Back Pain (PubMed); Yoga Journal",
-        youtube: "https://www.youtube.com/embed/JDcdhTuycOI"
+        youtube: "https://www.youtube.com/embed/n6jrC6WeF84"
       },
       {
         name: "Salabhasana",
@@ -385,7 +385,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens entire back, improves posture, tones glutes",
         precautions: "Lift with back muscles, not momentum",
         source: "B.K.S. Iyengar – Light on Yoga; Iyengar Yoga Institute, Pune",
-        youtube: "https://www.youtube.com/embed/GvvUgvLjR1I"
+        youtube: "https://www.youtube.com/embed/0kxczNm1xF4"
       },
       {
         name: "Supta Matsyendrasana",
@@ -395,7 +395,7 @@ export const BODY_REGIONS = [
         benefits: "Releases lower back tension, improves spinal mobility",
         precautions: "Keep both shoulders on the ground",
         source: "Yoga Journal – Restorative Poses; American Yoga Association",
-        youtube: "https://www.youtube.com/embed/oMM6HMFCVDQ"
+        youtube: "https://www.youtube.com/embed/hZduN8rruKM"
       }
     ]
   },
@@ -415,7 +415,7 @@ export const BODY_REGIONS = [
         benefits: "Opens hip joints, relieves sciatica, releases stored emotions",
         precautions: "Use props under hip for support; avoid with knee injuries",
         source: "Yoga Journal – Pose Library; International Journal of Yoga Therapy",
-        youtube: "https://www.youtube.com/embed/52ExLbNwsb0"
+        youtube: "https://www.youtube.com/embed/0_zPqA65Nok"
       },
       {
         name: "Baddha Konasana",
@@ -425,7 +425,7 @@ export const BODY_REGIONS = [
         benefits: "Opens hips, improves circulation, eases menstrual discomfort",
         precautions: "Don't press knees down forcefully",
         source: "B.K.S. Iyengar – Light on Yoga; Iyengar Yoga Institute, Pune",
-        youtube: "https://www.youtube.com/embed/QJi5-aQ7mKQ"
+        youtube: "https://www.youtube.com/embed/B6tb4TncKhY"
       },
       {
         name: "Malasana",
@@ -435,7 +435,7 @@ export const BODY_REGIONS = [
         benefits: "Opens hips and groin, strengthens ankles, improves balance",
         precautions: "Place heels on a blanket if they lift off the floor",
         source: "Yoga Journal – Pose Library; American Yoga Association",
-        youtube: "https://www.youtube.com/embed/a8Gkv_8pDCE"
+        youtube: "https://www.youtube.com/embed/IXpJEqssze8"
       }
     ]
   },
@@ -465,7 +465,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens thighs and glutes, improves balance",
         precautions: "Keep weight in heels; don't let knees go past toes",
         source: "B.K.S. Iyengar – Light on Yoga; Yoga Journal (yogajournal.com)",
-        youtube: "https://www.youtube.com/embed/paFzDM9LLWY"
+        youtube: "https://www.youtube.com/embed/ySafTekJ3Ls"
       },
       {
         name: "Anjaneyasana",
@@ -475,7 +475,7 @@ export const BODY_REGIONS = [
         benefits: "Stretches hip flexors, strengthens thighs, improves balance",
         precautions: "Pad the back knee; keep front knee aligned over ankle",
         source: "Yoga Journal – Pose Library; American Yoga Association",
-        youtube: "https://www.youtube.com/embed/gADEiFbvGv4"
+        youtube: "https://www.youtube.com/embed/MjiC4mGTnTw"
       }
     ]
   },
@@ -495,7 +495,7 @@ export const BODY_REGIONS = [
         benefits: "Improves knee flexibility, stretches thighs and ankles",
         precautions: "Sit on a block if knees are sensitive",
         source: "B.K.S. Iyengar – Light on Yoga; Iyengar Yoga Institute, Pune",
-        youtube: "https://www.youtube.com/embed/HoN-gfSH0dY"
+        youtube: "https://www.youtube.com/embed/KlYkyAUHrO8"
       },
       {
         name: "Trikonasana",
@@ -505,7 +505,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens knee-supporting muscles, improves alignment",
         precautions: "Micro-bend the front knee; don't hyperextend",
         source: "Yoga Journal – Pose Library; International Association of Yoga Therapists",
-        youtube: "https://www.youtube.com/embed/S9mMV_M4oCs"
+        youtube: "https://www.youtube.com/embed/upFYlxZHif0"
       },
       {
         name: "Sukhasana",
@@ -515,7 +515,7 @@ export const BODY_REGIONS = [
         benefits: "Gentle knee mobilization, calms mind, grounds energy",
         precautions: "Elevate hips on a cushion if knees are above hips",
         source: "Bihar School of Yoga – Asana Pranayama Mudra Bandha; Art of Living Foundation",
-        youtube: "https://www.youtube.com/embed/pDJnfS9GKWQ"
+        youtube: "https://www.youtube.com/embed/zLvJD7iKVhw"
       }
     ]
   },
@@ -535,7 +535,7 @@ export const BODY_REGIONS = [
         benefits: "Stretches calves and hamstrings, strengthens arms",
         precautions: "Bend knees if calves are very tight",
         source: "Yoga Journal – Pose Library; National Center for Complementary and Integrative Health",
-        youtube: "https://www.youtube.com/embed/EC7RGJ975iM"
+        youtube: "https://www.youtube.com/embed/j97SSGsnCAQ"
       },
       {
         name: "Uttanasana",
@@ -545,7 +545,7 @@ export const BODY_REGIONS = [
         benefits: "Stretches calves and hamstrings, calms the mind",
         precautions: "Bend knees to protect lower back",
         source: "B.K.S. Iyengar – Light on Yoga; Yoga Journal (yogajournal.com)",
-        youtube: "https://www.youtube.com/embed/gXABrCPFMk4"
+        youtube: "https://www.youtube.com/embed/g7Uhp5tphAs"
       },
       {
         name: "Parsvottanasana",
@@ -555,7 +555,7 @@ export const BODY_REGIONS = [
         benefits: "Deep calf stretch, improves balance, calms brain",
         precautions: "Use blocks if hands don't reach the floor",
         source: "B.K.S. Iyengar – Light on Yoga; Iyengar Yoga Institute, Pune",
-        youtube: "https://www.youtube.com/embed/gGrfbzFKdUo"
+        youtube: "https://www.youtube.com/embed/LTe3CO7Vtxs"
       }
     ]
   },
@@ -575,7 +575,7 @@ export const BODY_REGIONS = [
         benefits: "Strengthens feet and ankles, improves posture, grounds energy",
         precautions: "Distribute weight evenly across all four corners of feet",
         source: "Yoga Journal – Pose Library; American Yoga Association; B.K.S. Iyengar – Light on Yoga",
-        youtube: "https://www.youtube.com/embed/2HTvZp5PTXI"
+        youtube: "https://www.youtube.com/embed/NYhH8Gr35cI"
       },
       {
         name: "Vajrasana",
@@ -585,7 +585,7 @@ export const BODY_REGIONS = [
         benefits: "Stretches feet and ankles, aids digestion, calms mind",
         precautions: "Place a cushion between calves and thighs if uncomfortable",
         source: "Bihar School of Yoga – Asana Pranayama Mudra Bandha; Art of Living Foundation",
-        youtube: "https://www.youtube.com/embed/hE6xBbEE_8g"
+        youtube: "https://www.youtube.com/embed/e-IdkJqSSS8"
       },
       {
         name: "Padahastasana",
@@ -595,7 +595,7 @@ export const BODY_REGIONS = [
         benefits: "Stretches feet, stimulates reflexology points, calms mind",
         precautions: "Bend knees if hamstrings are tight",
         source: "Swami Satyananda Saraswati – Asana Pranayama Mudra Bandha; Bihar School of Yoga",
-        youtube: "https://www.youtube.com/embed/4mDzrMmjBiQ"
+        youtube: null
       }
     ]
   }
