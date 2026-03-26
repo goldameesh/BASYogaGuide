@@ -96,9 +96,14 @@ export default function Layout() {
       <footer className="border-t border-border/50 bg-card/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Yoga Asana Guide — For educational purposes only
-            </p>
+            <div>
+              <p className="text-xs text-muted-foreground">
+                © {new Date().getFullYear()} <a href="https://bhramaastraadvisory.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Bhramaastra Advisory Services</a> — For educational purposes only
+              </p>
+              <p className="text-xs text-muted-foreground mt-0.5">
+                Researched by BAS Intelligence Team and Built with 💛 by Amish
+              </p>
+            </div>
             <div className="flex items-center gap-4">
               <Link to="/faqs" className="text-xs text-muted-foreground hover:text-foreground transition-colors">FAQs</Link>
               <Link to="/disclaimers" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Disclaimers</Link>
