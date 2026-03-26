@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import BodyMap from "../components/yoga/BodyMap";
-import AsanaPanel from "../components/yoga/AsanaPanel";
+import AsanaModal from "../components/yoga/AsanaModal";
 
 export default function Explore() {
   const [selectedRegion, setSelectedRegion] = useState(null);
@@ -42,9 +42,9 @@ export default function Explore() {
         15 interactive body regions · 45 yoga asanas
       </p>
 
-      {/* Asana Panel */}
+      {/* Asana Modal */}
       {selectedRegion && (
-        <AsanaPanel
+        <AsanaModal
           regionId={selectedRegion}
           onClose={() => setSelectedRegion(null)}
         />
