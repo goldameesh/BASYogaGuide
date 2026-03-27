@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { X, ChevronDown, Sparkles, AlertTriangle, BookOpen, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BODY_REGIONS } from "./bodyMapData";
-import VoicePlayer from "./VoicePlayer";
+import GuidedPlayer from "./GuidedPlayer";
+
 
 const levelColors = {
   Beginner: "bg-emerald-100 text-emerald-700",
@@ -12,8 +13,6 @@ const levelColors = {
 
 function AsanaItem({ asana, index }) {
   const [expanded, setExpanded] = useState(false);
-
-  const voiceText = `${asana.name}, also known as ${asana.english}. ${asana.description}. Benefits: ${asana.benefits}. Precautions: ${asana.precautions}`;
 
   return (
     <motion.div
@@ -67,7 +66,6 @@ function AsanaItem({ asana, index }) {
                 </div>
               </div>
 
-              {/* Source citation */}
               <div className="flex gap-2.5 p-3 rounded-lg bg-accent/40 border border-border/40">
                 <BookOpen className="w-4 h-4 text-muted-foreground shrink-0 mt-0.5" />
                 <div>
@@ -76,13 +74,11 @@ function AsanaItem({ asana, index }) {
                 </div>
               </div>
 
-              {/* Voice Player */}
               <div className="pt-2 border-t border-border/40">
-                <p className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mb-2">Listen to instructions</p>
-                <VoicePlayer text={voiceText} />
+                <p className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mb-2">Guided Practice</p>
+                <GuidedPlayer asana={asana} />
               </div>
 
-              {/* YouTube Video */}
               <div className="pt-2 border-t border-border/40">
                 {asana.youtube === null ? (
                   <p className="text-xs text-muted-foreground italic">📹 No video available for this pose</p>
