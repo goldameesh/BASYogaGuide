@@ -78,7 +78,7 @@ function AsanaItem({ asana, index }) {
               <div className="pt-2 border-t border-border/40">
                 <div className="flex items-center justify-between mb-2">
                   <p className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Guided Practice</p>
-                  <AddToRoutineButton asanaName={asana.name} />
+                  <AddToRoutineButton asana={asana} />
                 </div>
                 <GuidedPlayer asana={asana} />
               </div>
