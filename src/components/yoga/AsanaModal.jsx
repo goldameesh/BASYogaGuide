@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { X, ChevronDown, Sparkles, AlertTriangle, BookOpen, ExternalLink } from "lucide-react";
+import AddToRoutineButton from "./AddToRoutineButton";
 import { motion, AnimatePresence } from "framer-motion";
 import { BODY_REGIONS } from "./bodyMapData";
 import GuidedPlayer from "./GuidedPlayer";
@@ -75,7 +76,10 @@ function AsanaItem({ asana, index }) {
               </div>
 
               <div className="pt-2 border-t border-border/40">
-                <p className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mb-2">Guided Practice</p>
+                <div className="flex items-center justify-between mb-2">
+                  <p className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Guided Practice</p>
+                  <AddToRoutineButton asanaName={asana.name} />
+                </div>
                 <GuidedPlayer asana={asana} />
               </div>
 

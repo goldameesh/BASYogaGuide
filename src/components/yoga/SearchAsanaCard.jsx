@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AddToRoutineButton from "./AddToRoutineButton";
 import { ChevronDown, Sparkles, AlertTriangle, BookOpen, ExternalLink, MapPin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import GuidedPlayer from "./GuidedPlayer";
@@ -73,7 +74,10 @@ export default function SearchAsanaCard({ asana, index }) {
                 </div>
               </div>
               <div className="pt-2 border-t border-border/40">
-                <p className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mb-2">Guided Practice</p>
+                <div className="flex items-center justify-between mb-2">
+                  <p className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Guided Practice</p>
+                  <AddToRoutineButton asanaName={asana.name} />
+                </div>
                 <GuidedPlayer asana={asana} />
               </div>
               {asana.youtube && (() => {
