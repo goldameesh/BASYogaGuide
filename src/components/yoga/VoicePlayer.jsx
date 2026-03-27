@@ -41,14 +41,21 @@ export default function VoicePlayer({ text }) {
     // Try to find an appropriate voice
     if (voices.length > 0) {
       const englishVoices = voices.filter((v) => v.lang.startsWith("en"));
+      const allVoices = englishVoices.length > 0 ? englishVoices : voices;
+
+      const femaleNames = ["samantha", "karen", "victoria", "moira", "tessa", "fiona", "alice", "ava", "susan", "zira", "helena", "female", "woman", "girl", "kate", "serena", "nicky", "amelie"];
+      const maleNames = ["daniel", "james", "alex", "tom", "fred", "male", "man", "guy", "gordon", "rishi", "oliver", "arthur", "lee"];
+
       if (selectedVoice === "male") {
-        const male = englishVoices.find((v) => v.name.toLowerCase().includes("male") || v.name.toLowerCase().includes("daniel") || v.name.toLowerCase().includes("james"));
+        const male = allVoices.find((v) => maleNames.some((n) => v.name.toLowerCase().includes(n)));
         if (male) utterance.voice = male;
-      } else if (selectedVoice === "female") {
-        const female = englishVoices.find((v) => v.name.toLowerCase().includes("female") || v.name.toLowerCase().includes("samantha") || v.name.toLowerCase().includes("karen"));
+        else if (allVoices.length > 0) utterance.voice = allVoices[0];
+      } else if (selectedVoice === "female" || selectedVoice === "kid") {
+        const female = allVoices.find((v) => femaleNames.some((n) => v.name.toLowerCase().includes(n)));
+        // If no female found, pick a voice that is NOT the first (likely male default)
         if (female) utterance.voice = female;
+        else if (allVoices.length > 1) utterance.voice = allVoices[1];
       }
-      // Kid voice uses pitch manipulation so any voice works
     }
 
     utterance.onend = () => setIsPlaying(false);
