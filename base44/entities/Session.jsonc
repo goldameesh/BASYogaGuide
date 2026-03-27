@@ -1,0 +1,42 @@
+{
+  "name": "Session",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "title": "User Email"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Date"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "title": "Duration (minutes)"
+    },
+    "asanas_practiced": {
+      "type": "array",
+      "title": "Asanas Practiced",
+      "items": {
+        "type": "string"
+      }
+    },
+    "routine_id": {
+      "type": "string",
+      "title": "Routine ID"
+    },
+    "routine_name": {
+      "type": "string",
+      "title": "Routine Name"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "user_email",
+    "date"
+  ]
+}

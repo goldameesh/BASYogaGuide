@@ -11,6 +11,8 @@ import Explore from './pages/Explore';
 import FAQs from './pages/FAQs';
 import Disclaimers from './pages/Disclaimers';
 import Search from './pages/Search';
+import Routines from './pages/Routines';
+import Progress from './pages/Progress';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -44,6 +46,8 @@ const AuthenticatedApp = () => {
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/disclaimers" element={<Disclaimers />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/routines" element={<Routines />} />
+        <Route path="/progress" element={<Progress />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>

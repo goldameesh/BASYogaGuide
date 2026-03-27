@@ -9,39 +9,47 @@ import {
 const faqs = [
   {
     q: "What is Yoga Asana Guide?",
-    a: "Yoga Asana Guide is an interactive educational app that helps you discover yoga asanas (poses) targeted to specific body regions. Simply tap a body part on our anatomical map to find relevant poses with detailed instructions, benefits, and precautions.",
+    a: "Yoga Asana Guide is an all-in-one interactive yoga app. You can explore 45 yoga asanas by body region using our anatomical body map, follow step-by-step voice-guided instructions, build personalized routines with automated reminders, and track your daily practice progress.",
   },
   {
-    q: "How do I use the interactive body map?",
-    a: "Navigate to the 'Explore' page and click or tap on any highlighted body part. You'll see a list of yoga asanas that benefit that area. Each asana card can be expanded to reveal full details, and you can use the voice player to listen to instructions.",
+    q: "How do I use the Know Your Body Explorer?",
+    a: "Navigate to the 'Know Your Body Explorer' page and tap any highlighted body region. You'll see 3 yoga asanas targeting that area. Expand any asana card to see detailed steps, benefits, precautions, and a guided audio player.",
   },
   {
-    q: "What are the voice options?",
-    a: "We offer three voice options for listening to asana instructions: Male voice (deeper tone), Female voice (natural tone), and Kid voice (higher pitch, great for young practitioners or a lighter experience). The voice uses your browser's built-in speech synthesis.",
+    q: "How does the guided voice player work?",
+    a: "Each asana has 5–6 step-by-step instructions. Press 'Start Guide' to hear each step read aloud in your chosen voice (Male, Female, or Kid). You can skip forward or back between steps, pause, or stop at any time.",
+  },
+  {
+    q: "What are My Routines?",
+    a: "My Routines lets you create personalized yoga sequences by selecting asanas from the full library. For each routine, you can set a weekly schedule (which days and what time) and the app will send you an in-app notification reminder at the right time.",
+  },
+  {
+    q: "How do routine reminders work?",
+    a: "When you create a routine and set a schedule, our automated system checks your active routines daily and sends you a personalized in-app notification at your scheduled time. Look for the bell icon in the top navigation to see your notifications.",
+  },
+  {
+    q: "How do I track my progress?",
+    a: "Visit the 'Progress' page to log your yoga sessions. Record the date, duration, which routine or asanas you practiced, and any notes. The page shows your total sessions, total minutes, days practiced, and a 7-day bar chart of your activity.",
+  },
+  {
+    q: "What voice options are available?",
+    a: "Three voice options: Male (deeper tone), Female (natural tone), and Kid (higher pitch, great for young practitioners). Voice playback uses your browser's built-in speech synthesis, which works on most modern devices.",
   },
   {
     q: "Is this app suitable for beginners?",
-    a: "Absolutely! Each asana is labeled with its difficulty level — Beginner, Intermediate, or Advanced. We recommend starting with beginner-level asanas and gradually progressing. Always listen to your body and consult a professional if unsure.",
-  },
-  {
-    q: "Can I use this app offline?",
-    a: "The body map and all asana data are built into the app, so the core content works without an internet connection. However, the voice synthesis feature requires your browser's speech capabilities, which are typically available offline on most modern devices.",
+    a: "Absolutely! Each asana is labeled Beginner, Intermediate, or Advanced. The Search page lets you filter by level so you can start with what suits you. Always listen to your body and consult a professional if you have any concerns.",
   },
   {
     q: "How many asanas are included?",
-    a: "Currently, the guide includes 45 yoga asanas across 15 body regions, with 3 asanas per region. Each asana covers a different difficulty level to provide options for all experience levels.",
+    a: "45 yoga asanas across 15 body regions (3 per region). You can browse all of them on the Search page, filter by difficulty level, and add any to your personal routines.",
   },
   {
     q: "Is this medical advice?",
-    a: "No. This app provides yoga information for educational purposes only. It is not medical advice. Please consult a qualified medical professional for any health concerns, injuries, or pain before practicing any yoga asanas. See our Disclaimers page for full details.",
+    a: "No. This app provides yoga information for educational purposes only. It is not medical advice. Please consult a qualified medical professional for any health concerns or injuries before practicing. See our Disclaimers page for full details.",
   },
   {
     q: "Can children use this app?",
-    a: "Yes! The kid-friendly voice option makes it accessible for young practitioners. However, children should always practice under adult supervision, and parents should review the precautions for each asana to ensure safe practice.",
-  },
-  {
-    q: "How do I report an issue or suggest improvements?",
-    a: "We welcome your feedback! Please reach out through the app's contact channels. We're constantly working to add more asanas, improve descriptions, and enhance the overall experience.",
+    a: "Yes! The kid-friendly voice option makes it accessible for young practitioners. Children should always practice under adult supervision, and parents should review precautions for each asana.",
   },
 ];
 
