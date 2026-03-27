@@ -1,4 +1,5 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
+import NotificationBell from "./NotificationBell";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -46,6 +47,8 @@ export default function Layout() {
               </Link>
             ))}
           </nav>
+
+          <NotificationBell />
 
           {/* Mobile Toggle */}
           <button
