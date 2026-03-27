@@ -1,0 +1,46 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "enum": [
+        "admin",
+        "user"
+      ],
+      "default": "user",
+      "title": "Role"
+    },
+    "trial_started_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Trial Started At"
+    },
+    "trial_ends_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Trial Ends At"
+    },
+    "is_premium": {
+      "type": "boolean",
+      "title": "Premium Access",
+      "default": false
+    },
+    "stripe_customer_id": {
+      "type": "string",
+      "title": "Stripe Customer ID"
+    },
+    "stripe_payment_intent_id": {
+      "type": "string",
+      "title": "Stripe Payment Intent ID"
+    },
+    "discount_applied": {
+      "type": "number",
+      "title": "Discount % Applied"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Admin Notes"
+    }
+  }
+}

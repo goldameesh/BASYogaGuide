@@ -6,6 +6,8 @@ import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import Layout from './components/Layout';
+import SubscriptionProvider from './components/SubscriptionProvider';
+import Subscribe from './pages/Subscribe';
 import Home from './pages/Home';
 import Explore from './pages/Explore';
 import FAQs from './pages/FAQs';
@@ -47,6 +49,7 @@ const AuthenticatedApp = () => {
         <Route path="/disclaimers" element={<Disclaimers />} />
         <Route path="/search" element={<Search />} />
         <Route path="/routines" element={<Routines />} />
+        <Route path="/subscribe" element={<Subscribe />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
@@ -61,7 +64,9 @@ function App() {
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
         <Router>
-          <AuthenticatedApp />
+          <SubscriptionProvider>
+            <AuthenticatedApp />
+          </SubscriptionProvider>
         </Router>
         <Toaster />
       </QueryClientProvider>

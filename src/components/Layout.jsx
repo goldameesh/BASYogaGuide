@@ -1,6 +1,7 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 import NotificationBell from "./NotificationBell";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
+import { useSubscription } from "@/hooks/useSubscription";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -15,6 +16,7 @@ const navLinks = [
 ];
 
 export default function Layout() {
+  const subscription = useSubscription();
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
@@ -51,9 +53,28 @@ export default function Layout() {
             ))}
           </nav>
 
+          {/* Trial / upgrade badge */}
+          {subscription && !subscription.isPremium && subscription.status !== 'loading' && (
+            <Link
+              to="/subscribe"
+              className="hidden sm:flex items-center gap-1.5 text-[11px] font-medium px-3 py-1.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+            >
+              <Sparkles className="w-3 h-3" />
+              {subscription.status === 'trial' ? `${subscription.daysLeft}d trial left` : 'Upgrade · $0.99'}
+            </Link>
+          )}
           <NotificationBell />
 
           {/* Mobile Toggle */}
+          {subscription && !subscription.isPremium && subscription.status !== 'loading' && (
+            <Link
+              to="/subscribe"
+              className="sm:hidden flex items-center gap-1 text-[11px] font-medium px-2.5 py-1 rounded-full bg-primary/10 text-primary"
+            >
+              <Sparkles className="w-3 h-3" />
+              {subscription.status === 'trial' ? `${subscription.daysLeft}d` : '$0.99'}
+            </Link>
+          )}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden p-2 rounded-lg hover:bg-accent transition-colors"
@@ -87,6 +108,15 @@ export default function Layout() {
                     {link.label}
                   </Link>
                 ))}
+                {subscription && !subscription.isPremium && (
+                  <Link
+                    to="/subscribe"
+                    onClick={() => setMobileOpen(false)}
+                    className="block px-4 py-2.5 rounded-lg text-sm font-medium bg-primary/10 text-primary"
+                  >
+                    ✨ {subscription.status === 'trial' ? `Free trial · ${subscription.daysLeft}d left` : 'Upgrade · $0.99/lifetime'}
+                  </Link>
+                )}
               </nav>
             </motion.div>
           )}
